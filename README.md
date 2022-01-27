@@ -16,7 +16,18 @@ Each of these parts has an amount of frames associated with it, totallying out t
 
 In addition to moves having frame data for coming out, they also have framedata for what happens on hit such as how many frames someone is in hitstun, this is what allows combos to be possible. You use a move that provides enough hitstun that you can hit them again while they are not able to do anything.
 
+# Gameplay
 
+The idea here is that players can select an action (moving their character, pressing a button, or using a special move) and have it executed at the same time to update the gamestate frame by frame. If a player is in recovery they will not be able to act out of it, so commit wisely.
+
+If a player is hit, both players will be reset to starting position, with the character who took damage losing health.
+
+A player will be able to move left, right, and crouch to block low
+A player will also be able to jump
+A player will have 3 buttons to use (light, medium, heavy)
+A player will have 1 button as a character action (Fireball, DP, Rekka, etc) We keep it simple.
+
+Hit your oponent, don't get hit
 
 
 
